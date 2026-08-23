@@ -7,13 +7,12 @@ ARCH=$(uname -m)
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
 pacman -Syu --noconfirm \
-    clang    \
-    libdecor \
+    clang \
     sdl3
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano ! llvm
+get-debloated-pkgs --add-common --prefer-nano libdecor-mini ! llvm
 
 # Comment this out if you need an AUR package
 make-aur-package iris-emu
