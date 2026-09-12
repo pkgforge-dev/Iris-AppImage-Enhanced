@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Iris
+Comment=Experimental PlayStation 2 Emulator
+Exec=iris
+Icon=iris
+Type=Application
+StartupWMClass=com.allkern.iris
+Categories=Game;Emulator;
